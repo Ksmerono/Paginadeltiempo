@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El tiempo</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+</head>
+
+<body>
+    <div class="centradito">
+        <div class="container card shadow-lg">
+            <div class="container pt-3 ">
+                <h3 class="text-center fw-bold">BUSCA EL TIEMPO DE LA ZONA QUE DESEE</h3>
+                <form class=" row g-3 needs-validation" novalidate>
+                    <div class="col-12">
+                        <label for="id_nombre" class="form-label">Nombre personal:</label>
+                        <input type="text" class="form-control" id="id_nombre" required>
+                        <div id="id_nombre_true" class="valid-feedback">
+                            ¡Perfecto!
+                        </div>
+                        <div id="id_nombre_false" class="invalid-feedback">
+                            ¡Falta tu nombre!
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <label for="id_ciudad" class="form-label">Ciudad</label>
+                        <input type="text" class="form-control" id="id_ciudad" required>
+                        <div id="id_ciudad_true" class="valid-feedback">
+                            ¡Perfecto!
+                        </div>
+                        <div id="id_ciudad_false" class="invalid-feedback">
+                            ¡Falta ciudad!
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <label for="id_pais" class="form-label">País</label>
+                        <input type="text" class="form-control" id="id_pais" required>
+                        <div id="id_pais_true" class="valid-feedback">
+                            ¡Perfecto!
+                        </div>
+                        <div id="id_pais_false" class="invalid-feedback">
+                            ¡Falta país!
+                        </div>
+                    </div>
+                    <div class="col-12 text-center">
+                        <button class="btn btn-primary" type="submit" id="id_buscar">Buscar tiempo</button>
+                    </div>
+                </form>
+            </div>
+            <div class="container mt-3">
+                <div class="row text-center align-content-center">
+                    <h3 id="nombreP"></h3>
+                    <div class="col-6">
+                        <div id="icon"></div>
+                        <p id="description"></p>
+                    </div>
+                    <div class="col-6" style="  margin: auto;">
+                        <h1 id="temp"></h1>
+                        <p id="location"></p>
+                        <div class="row text-center align-content-center">
+                            <div class="col-6" id=max>
+                            </div>
+                            <div class="col-6" id=min>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                <div class="row text-center align-content-center">
+                    <div class="col-6" id=max>
+                    </div>
+                    <div class="col-6" id=min>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/customv3.js"></script>
+    <script src="js/flotante.js"></script>
+    
+
+</body>
+
+</html>
